@@ -36,7 +36,7 @@ struct BeginnerView: View {
             AnimatedGradientViewBeginner()
             VStack(alignment: .leading,spacing: 20) {
                 Text("Choose a Category")
-                    .font(.title)
+                    .font(.title2)
                     .bold()
                     .padding(.top)
                 
@@ -60,7 +60,7 @@ struct BeginnerView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("Beginner")
+            .navigationTitle("Basic")
         }
     }
 }

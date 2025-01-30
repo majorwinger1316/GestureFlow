@@ -43,7 +43,7 @@ struct AdvancedView: View {
             AnimatedGradientViewAdvanced()
             VStack(alignment: .leading,spacing: 20) {
                 Text("Choose a Category")
-                    .font(.title)
+                    .font(.title2)
                     .bold()
                     .padding(.top)
                 
@@ -58,7 +58,7 @@ struct AdvancedView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("Intermediate")
+            .navigationTitle("Daily Life")
         }
     }
 }

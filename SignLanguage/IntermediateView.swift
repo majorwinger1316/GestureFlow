@@ -13,7 +13,7 @@ struct AnimatedGradientViewIntermediate: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     let colors = [
-        Color.green.opacity(0.4),
+        Color.purple.opacity(0.4),
         Color.white.opacity(0.4),
         Color.teal.opacity(0.4)
     ]
@@ -43,7 +43,7 @@ struct IntermediateView: View {
             AnimatedGradientViewIntermediate()
             VStack(alignment: .leading,spacing: 20) {
                 Text("Choose a Category")
-                    .font(.title)
+                    .font(.title2)
                     .bold()
                     .padding(.top)
                 
@@ -52,7 +52,7 @@ struct IntermediateView: View {
                     CategoryButtonView(
                         title: "Greetings",
                         icon: "figure.wave",
-                        gradient: Gradient(colors: [Color.green, Color.teal])
+                        gradient: Gradient(colors: [Color.purple, Color.teal])
                     )
                 }
                 
@@ -60,7 +60,7 @@ struct IntermediateView: View {
                     CategoryButtonView(
                         title: "Colors",
                         icon: "paintpalette.fill",
-                        gradient: Gradient(colors: [Color.green, Color.teal])
+                        gradient: Gradient(colors: [Color.purple, Color.teal])
                     )
                 }
                 
@@ -68,7 +68,7 @@ struct IntermediateView: View {
                     CategoryButtonView(
                         title: "Date and Time",
                         icon: "calendar.badge.clock",
-                        gradient: Gradient(colors: [Color.green, Color.teal])
+                        gradient: Gradient(colors: [Color.purple, Color.teal])
                     )
                 }
                 
